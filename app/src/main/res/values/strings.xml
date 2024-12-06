@@ -6,7 +6,7 @@
     <string name="facebook_app_id">1785017158908895</string>
     <string name="fb_login_protocol_scheme">fb1785017158908895</string>
     <string name="facebook_client_token">2240fae5fc3dd90b4ddba71067f1fa69</string>
-    <string name="change_language">Change Language</string>
+    <string name="change_language">Language</string>
     <string name="update_profile">Update User Profile</string>
     <string name="sign_out">Sign Out</string>
     <string name="fullnameupdate">Full name</string>
@@ -73,4 +73,20 @@
     <string name="Do_you_have_an_account">Do you have an account</string>
     <string name="welcome">Welcome!</string>
     <string name="Decription">Hole Alert is an app that detects potholes around VietNam National University, HCMC, helping users avoid bumpy roads.</string>
+    <string name="Myaccount">My account</string>
+    <string name="infor">Account &amp; Security</string>
+    <string name="Settings">Settings</string>
+    <string name="Notification_Settings">Notification Settings</string>
+    <string name="Support">Support</string>
+    <string name="About">About</string>
+    <string name="HelpCentre">Request Account Deletion</string>
+    <string name="Logout">Sign out</string>
+    <string name="UserProfile">User Profile</string>
+    <string name="Changeyouravatar">Change your avatar</string>
+    <string name="Fullname">FULL NAME</string>
+    <string name="Newpassword">NEW PASSWORD</string>
+    <string name="Confirmpass">CONFIRM PASSWORD</string>
+    <string name="Password2"> CURRENT PASSWORD</string>
+    <string name="Save">Save</string>
+
 </resources>

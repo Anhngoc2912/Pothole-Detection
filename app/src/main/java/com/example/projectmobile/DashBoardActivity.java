@@ -49,11 +49,11 @@ public class DashBoardActivity extends AppCompatActivity {
                     startActivity(intent);
                     finish();
                 } else if (id == R.id.user){
-                    Intent intent = new Intent(DashBoardActivity.this, UpdateProfileActivity.class);
+                    Intent intent = new Intent(DashBoardActivity.this, User_Activity.class);
                     startActivity(intent);
                     finish();
                 } else if (id == R.id.setting){
-                    Intent intent = new Intent(DashBoardActivity.this, SettingActivity.class);
+                    Intent intent = new Intent(DashBoardActivity.this, Setting_Activity.class);
                     startActivity(intent);
                     finish();
                 }

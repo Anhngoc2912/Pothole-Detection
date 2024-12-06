@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Setting_Activity"
+    android:background="@color/white">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/yellow"
+            app:popupTheme="@style/Theme.Material3.Light"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/setting"
+                style="@style/titile" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/green" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="20dp"
+                android:text="@string/Myaccount"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/infor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tag"
+                android:background="@drawable/cus_backgr_setting"
+                android:drawableRight="@drawable/baseline_navigate_next_24"
+                android:fontFamily="sans-serif-medium"
+                android:padding="17dp"
+                android:text="@string/infor"
+                android:textColor="@color/black"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/tag1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/infor"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="40dp"
+                android:text="@string/Settings"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/language"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tag1"
+                android:background="@drawable/cus_backgr_setting"
+                android:drawableRight="@drawable/baseline_navigate_next_24"
+                android:fontFamily="sans-serif-medium"
+                android:padding="17dp"
+                android:text="@string/change_language"
+                android:textColor="@color/black"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/Notification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/language"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/cus_backgr_setting"
+                android:drawableRight="@drawable/baseline_navigate_next_24"
+                android:fontFamily="sans-serif-medium"
+                android:padding="17dp"
+                android:text="@string/Notification_Settings"
+                android:textColor="@color/black"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/tag2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Notification"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="40dp"
+                android:text="@string/Support"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/support"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tag2"
+                android:background="@drawable/cus_backgr_setting"
+                android:drawableRight="@drawable/baseline_navigate_next_24"
+                android:fontFamily="sans-serif-medium"
+                android:padding="17dp"
+                android:text="@string/About"
+                android:textColor="@color/black"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/support2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/support"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/cus_backgr_setting"
+                android:drawableRight="@drawable/baseline_navigate_next_24"
+                android:fontFamily="sans-serif-medium"
+                android:padding="17dp"
+                android:text="@string/HelpCentre"
+                android:textColor="@color/black"
+                android:textSize="17dp" />
+
+            <Button
+                android:id="@+id/btn_Logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/support2"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginRight="17dp"
+                android:background="@drawable/cus_btn_yellow"
+                app:backgroundTint="@null"
+                android:text="@string/Logout"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:textSize="17dp" />
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:elevation="8dp"
+        app:menu="@menu/bottom_menu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:itemIconTint="@color/color"
+        app:itemTextColor="@color/color"
+        app:labelVisibilityMode="auto"
+        android:layout_gravity="bottom"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

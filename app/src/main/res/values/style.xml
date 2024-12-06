@@ -68,4 +68,13 @@
         <item name="android:padding">10dp</item>
         <item name="android:background">@drawable/cus_btn_green</item>
     </style>
+
+    <style name="titile">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/green</item>
+        <item name="android:textSize">20dp</item>
+        <item name="fontFamily">sans-serif-thin</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">10dp</item>
+    </style>
 </resources>

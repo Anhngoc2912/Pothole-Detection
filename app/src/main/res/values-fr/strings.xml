@@ -73,4 +73,19 @@
     <string name="Do_you_have_an_account">Avez-vous un compte</string>
     <string name="welcome">Bienvenu!</string>
     <string name="Decription">Hole Alert est une application qui détecte les nids-de-poule autour de l\'Université nationale du Viet Nam, HCMV, aidant ainsi les utilisateurs à éviter les routes cahoteuses.</string>
+    <string name="Myaccount">Mon compte</string>
+    <string name="infor">Compte et amp; Sécurité</string>
+    <string name="Settings">Paramètres</string>
+    <string name="Notification_Settings">Paramètres de notification</string>
+    <string name="Support">Soutien</string>
+    <string name="About">À propos</string>
+    <string name="HelpCentre">Demander la suppression du compte</string>
+    <string name="Logout">Se déconnecter</string>
+    <string name="UserProfile">Profil utilisateur</string>
+    <string name="Changeyouravatar">Changez votre avatar</string>
+    <string name="Fullname">NOM ET PRÉNOM</string>
+    <string name="Newpassword">NOUVEAU MOT DE PASSE</string>
+    <string name="Confirmpass">CONFIRMEZ LE MOT DE PASSE</string>
+    <string name="Password2"> MOT DE PASSE ACTUEL</string>
+    <string name="Save">Sauvegarder</string>
 </resources>

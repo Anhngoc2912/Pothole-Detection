@@ -683,11 +683,11 @@ public class MapActivity extends AppCompatActivity implements SensorEventListene
                     startActivity(intent);
                     finish();
                 } else if (id == R.id.user) {
-                    Intent intent = new Intent(MapActivity.this, UpdateProfileActivity.class);
+                    Intent intent = new Intent(MapActivity.this, User_Activity.class);
                     startActivity(intent);
                     finish();
                 } else if (id == R.id.setting) {
-                    Intent intent = new Intent(MapActivity.this, SettingActivity.class);
+                    Intent intent = new Intent(MapActivity.this, Setting_Activity.class);
                     startActivity(intent);
                     finish();
                 }

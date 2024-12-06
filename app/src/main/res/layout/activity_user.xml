@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User_Activity"
+    android:background="@color/white">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/yellow"
+            app:popupTheme="@style/Theme.Material3.Light"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <TextView
+                style="@style/titile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/UserProfile" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/green"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/profile" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#9FFFFFFF" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/avatar"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/outline_account_circle_24" />
+
+                <TextView
+                    android:id="@+id/change_avatar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/avatar"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:gravity="center_horizontal"
+                    android:padding="3dp"
+                    android:text="@string/Changeyouravatar"
+                    android:textColor="@color/red" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/green" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/tag1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Fullname"
+                    android:textColor="@color/green"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/edt_Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tag1"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/cus_edt2"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tag2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edt_Name"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/Password2"
+                    android:textColor="@color/green"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/edt_Password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tag2"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/cus_edt2"
+                    android:gravity="center_vertical"
+                    android:inputType="textPassword"
+                    android:paddingLeft="15dp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tag3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edt_Password"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/Newpassword"
+                    android:textColor="@color/green"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/edt_newpass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tag3"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/cus_edt2"
+                    android:gravity="center_vertical"
+                    android:inputType="textPassword"
+                    android:paddingLeft="15dp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tag4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edt_newpass"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/Confirmpass"
+                    android:textColor="@color/green"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/edt_confirmpass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tag4"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/cus_edt2"
+                    android:gravity="center_vertical"
+                    android:inputType="textPassword"
+                    android:paddingLeft="15dp"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/Save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edt_confirmpass"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/cus_btn_yellow"
+                    android:padding="10dp"
+                    android:text="@string/Save"
+                    android:textColor="@color/black"
+                    android:textSize="17dp"
+                    app:backgroundTint="@null" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:elevation="8dp"
+        app:menu="@menu/bottom_menu"
+        app:itemIconTint="@color/color"
+        app:itemTextColor="@color/color"
+        app:labelVisibilityMode="auto"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

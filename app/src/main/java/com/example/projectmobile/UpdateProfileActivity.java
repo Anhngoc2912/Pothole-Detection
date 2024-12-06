@@ -55,6 +55,7 @@ public class UpdateProfileActivity extends AppCompatActivity {
     CircleImageView imgprofile;
     ActivityResultLauncher<Intent> imagePickLauncher;
     Uri uri;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
